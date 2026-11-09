@@ -70,7 +70,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   ];
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b-2 border-[var(--border-ink)] bg-[var(--paper-bg)]/95 backdrop-blur-md">
+    <header className="sticky top-[48px] z-40 w-full border-b-2 border-[var(--border-ink)] bg-[var(--paper-bg)]/95 backdrop-blur-md">
       {/* Top Sketchbook Metadata Strip (Reference 1: Wander the Horizon) */}
       <div className="border-b border-[var(--border-ink)]/20 px-4 lg:px-8 py-1.5 flex items-center justify-between text-[11px] font-mono-tech text-[var(--ink-muted)]">
         <div className="flex items-center gap-3">

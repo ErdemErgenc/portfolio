@@ -353,3 +353,84 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--cobalt);
 }
+
+/* ==========================================
+   PORTFOLIO 2: 3D CLAY & LANYARD STUDIO STYLES
+   ========================================== */
+.p2-dotted-bg {
+  background-color: #EEF2F7;
+  background-image: radial-gradient(#CBD5E1 1.35px, transparent 1.35px);
+  background-size: 20px 20px;
+}
+
+.p2-studio-card {
+  background: #FAFBFD;
+  border: 6px solid #FFFFFF;
+  border-radius: 36px;
+  box-shadow:
+    0 20px 50px rgba(15, 23, 42, 0.09),
+    0 4px 12px rgba(15, 23, 42, 0.05),
+    inset 0 2px 4px rgba(255, 255, 255, 0.9);
+}
+
+.p2-keycap {
+  border-radius: 16px;
+  border-bottom-width: 7px;
+  border-right-width: 4px;
+  border-top-width: 2px;
+  border-left-width: 2px;
+  box-shadow:
+    0 10px 20px rgba(15, 23, 42, 0.16),
+    inset 0 2px 3px rgba(255, 255, 255, 0.65);
+  transition: transform 0.14s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.14s ease;
+  user-select: none;
+}
+
+.p2-keycap:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+.p2-keycap:active {
+  transform: translateY(4px);
+  border-bottom-width: 3px;
+}
+
+.p2-software-bevel {
+  border-radius: 12px;
+  border-top: 3px solid rgba(255, 255, 255, 0.75);
+  border-left: 3px solid rgba(255, 255, 255, 0.55);
+  border-right: 3px solid rgba(0, 0, 0, 0.22);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.32);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.14);
+  transition: transform 0.18s ease;
+}
+
+.p2-software-bevel:hover {
+  transform: translateY(-4px) scale(1.06);
+}
+
+.p2-id-card {
+  background: linear-gradient(145deg, #EF4444 0%, #DC2626 55%, #B91C1C 100%);
+  border-radius: 22px;
+  border: 3px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 24px 48px rgba(185, 28, 28, 0.28),
+    0 8px 20px rgba(15, 23, 42, 0.18),
+    inset 0 2px 6px rgba(255, 255, 255, 0.4);
+}
+
+.p2-skill-pill {
+  background: #FFFFFF;
+  border: 1.5px solid #CBD5E1;
+  border-bottom: 3px solid #94A3B8;
+  border-radius: 9999px;
+  box-shadow: 0 2px 5px rgba(15, 23, 42, 0.04);
+  transition: all 0.15s ease;
+}
+
+.p2-skill-pill:hover {
+  border-color: #2563EB;
+  border-bottom-color: #1D4ED8;
+  transform: translateY(-2px);
+}
+
