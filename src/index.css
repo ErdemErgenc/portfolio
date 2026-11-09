@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper-bg: #FBF8F1;
+    --paper-card: #FFFDF9;
+    --paper-secondary: #F3EFE6;
+    --ink: #141413;
+    --ink-muted: #57554E;
+    --cobalt: #1D4ED8;
+    --amber: #F59E0B;
+    --coral: #EA580C;
+    --emerald: #059669;
+    --grid-line: rgba(20, 20, 19, 0.065);
+    --rule-line: rgba(29, 78, 216, 0.08);
+    --border-ink: #141413;
+  }
+
+  .night-blueprint {
+    --paper-bg: #0B132B;
+    --paper-card: #111D3B;
+    --paper-secondary: #1C2541;
+    --ink: #F8FAFC;
+    --ink-muted: #94A3B8;
+    --cobalt: #60A5FA;
+    --amber: #FBBF24;
+    --coral: #FB923C;
+    --emerald: #34D399;
+    --grid-line: rgba(96, 165, 250, 0.11);
+    --rule-line: rgba(96, 165, 250, 0.13);
+    --border-ink: #38BDF8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--paper-bg);
+    color: var(--ink);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--paper-bg);
+    color: var(--ink);
+    overflow-x: hidden;
+    transition: background-color 0.45s cubic-bezier(0.22, 1, 0.36, 1), color 0.45s ease;
+  }
+}
+
+.font-display-condensed {
+  font-family: 'Anton', Impact, sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 0.92;
+}
+
+.font-pixel {
+  font-family: 'Silkscreen', monospace;
+  letter-spacing: -0.02em;
+}
+
+.font-mono-tech {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-hand {
+  font-family: 'Caveat', cursive;
+}
+
+.font-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Lined Notebook & Architectural Grid Background */
+.sketchbook-bg {
+  background-color: var(--paper-bg);
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--rule-line) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.notebook-lines {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 31px,
+    var(--rule-line) 31px,
+    var(--rule-line) 32px
+  );
+}
+
+/* Neo-brutalist Retro OS Window Shadow */
+.retro-window {
+  background-color: var(--paper-card);
+  border: 2.5px solid var(--border-ink);
+  box-shadow: 6px 6px 0px var(--border-ink);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.retro-window-sm {
+  background-color: var(--paper-card);
+  border: 2px solid var(--border-ink);
+  box-shadow: 4px 4px 0px var(--border-ink);
+}
+
+.retro-btn {
+  border: 2px solid var(--border-ink);
+  box-shadow: 3px 3px 0px var(--border-ink);
+  transition: all 0.15s ease;
+}
+
+.retro-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px var(--border-ink);
+}
+
+.retro-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px var(--border-ink);
+}
+
+/* Masking Tape Effect for Polaroids */
+.scotch-tape {
+  background: rgba(251, 238, 193, 0.72);
+  border: 1px solid rgba(180, 160, 110, 0.35);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(2px);
+}
+
+/* Perforated Stamp Badge Effect */
+.stamp-badge {
+  position: relative;
+  border: 2px solid #141413;
+  box-shadow: 3px 3px 0px #141413;
+}
+
+/* White Sticker Cutout Filter for Transparent Portraits */
+.sticker-cutout {
+  filter:
+    drop-shadow(3px 0 0 #FFFFFF)
+    drop-shadow(-3px 0 0 #FFFFFF)
+    drop-shadow(0 3px 0 #FFFFFF)
+    drop-shadow(0 -3px 0 #FFFFFF)
+    drop-shadow(4px 4px 0 #141413);
+}
+
+/* Folder Tab Clip Path */
+.folder-tab {
+  clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 100%, 0 100%);
+}
+
+/* Blueprint X-Ray Mode Overlay */
+.blueprint-xray * {
+  outline: 1px dashed rgba(29, 78, 216, 0.32) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--paper-bg);
+  border-left: 2px solid var(--border-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--amber);
+  border: 2px solid var(--border-ink);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cobalt);
+}
