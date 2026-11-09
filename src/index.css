@@ -119,6 +119,189 @@
   box-shadow: 1px 1px 0px var(--border-ink);
 }
 
+/* ==========================================
+   WINDOWS XP LUNA THEME STYLES
+   ========================================== */
+.xp-bliss-wallpaper {
+  background:
+    radial-gradient(ellipse 120% 55% at 50% 108%, #47A418 0%, #5EC227 45%, #73D639 62%, transparent 63%),
+    radial-gradient(ellipse 90% 45% at 18% 105%, #3B8E12 0%, #54B820 55%, transparent 56%),
+    radial-gradient(ellipse 95% 48% at 85% 105%, #3E9614 0%, #63C82C 52%, transparent 53%),
+    radial-gradient(circle at 25% 28%, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.35) 18%, transparent 38%),
+    radial-gradient(circle at 72% 22%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 22%, transparent 42%),
+    linear-gradient(180deg, #1E69DE 0%, #3E8MF2 38%, #6DB3F8 65%, #A8D4FF 100%);
+  background-color: #3B82F6;
+}
+
+.xp-window {
+  background-color: #ECE9D8;
+  border: 3px solid #0054E3;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow:
+    inset 0 0 0 1px #0831D9,
+    0 8px 24px rgba(0, 20, 60, 0.35),
+    4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.xp-titlebar {
+  background: linear-gradient(
+    180deg,
+    #0997FF 0%,
+    #0053EE 8%,
+    #0050EE 40%,
+    #0066FF 88%,
+    #003DD9 93%,
+    #003399 100%
+  );
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px #001A66;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #002780;
+  user-select: none;
+}
+
+.xp-titlebar-olive {
+  background: linear-gradient(
+    180deg,
+    #B5C691 0%,
+    #8BA169 8%,
+    #7C9458 45%,
+    #8AA364 88%,
+    #637843 100%
+  );
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px #32401E;
+}
+
+.xp-ctrl-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.4), 0 1px 1px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(180deg, #3C8CF8 0%, #1964E8 50%, #1148B8 100%);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.xp-ctrl-btn:hover {
+  filter: brightness(1.15);
+}
+
+.xp-ctrl-btn:active {
+  filter: brightness(0.9);
+  transform: translateY(1px);
+}
+
+.xp-ctrl-close {
+  background: linear-gradient(180deg, #F28268 0%, #E0431D 50%, #B82100 100%);
+}
+
+.xp-menubar {
+  background-color: #ECE9D8;
+  border-bottom: 1px solid #D4D0C8;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: #141413;
+}
+
+.xp-addressbar {
+  background-color: #ECE9D8;
+  border-bottom: 2px groove #D4D0C8;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #141413;
+}
+
+.xp-inset-panel {
+  background-color: #FFFFFF;
+  border: 2px solid;
+  border-color: #7F9DB9 #F3F2EA #F3F2EA #7F9DB9;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.xp-button {
+  background: linear-gradient(180deg, #FFFFFF 0%, #ECE9D8 85%, #D6D2C2 100%);
+  border: 1px solid #003C74;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+  color: #141413;
+  transition: all 0.12s ease;
+}
+
+.xp-button:hover {
+  box-shadow: inset 0 0 0 1.5px #F59E0B;
+  background: linear-gradient(180deg, #FFFDF9 0%, #F5F2E4 100%);
+}
+
+.xp-button:active {
+  background: #D6D2C2;
+}
+
+.xp-taskbar {
+  background: linear-gradient(
+    180deg,
+    #3168D5 0%,
+    #4E91F6 6%,
+    #245EDB 14%,
+    #245EDB 88%,
+    #1941A5 100%
+  );
+  border-top: 2px solid #0831D9;
+  color: #FFFFFF;
+}
+
+.xp-start-btn {
+  background: linear-gradient(
+    180deg,
+    #5FD04B 0%,
+    #3A9F28 12%,
+    #369524 50%,
+    #2A7E19 88%,
+    #1E5F11 100%
+  );
+  border-right: 2px solid #1A520F;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.55), 2px 0 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.xp-task-tab {
+  background: linear-gradient(180deg, #3C81F3 0%, #2764E3 50%, #1F55C9 100%);
+  border: 1px solid #1642A5;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.xp-task-tab-active {
+  background: linear-gradient(180deg, #1844A3 0%, #1E52BD 50%, #255CD0 100%);
+  border: 1px solid #0D2D7A;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.xp-systray {
+  background: linear-gradient(180deg, #0F8AEE 0%, #1094F6 15%, #0D7DE0 85%, #095BC2 100%);
+  border-left: 2px solid #0A4EA6;
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.35);
+}
+
 /* Masking Tape Effect for Polaroids */
 .scotch-tape {
   background: rgba(251, 238, 193, 0.72);
