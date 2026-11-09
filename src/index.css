@@ -354,3 +354,57 @@
   background: var(--cobalt);
 }
 
+/* ==========================================
+   PORTFOLIO 2: FRENCH EDITORIAL ART-ZINE STYLES
+   ========================================== */
+.zine-paper {
+  background-color: #F5F0E6;
+  color: #1C1917;
+  background-image: radial-gradient(rgba(28, 25, 23, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.font-zine-display {
+  font-family: 'Unbounded', 'Syne', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.font-zine-art {
+  font-family: 'Syne', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.zine-pill {
+  background-color: #FFFFFF;
+  color: #1C1917;
+  border: 1.5px solid #1C1917;
+  border-radius: 9999px;
+  box-shadow: 0px 3px 0px #1C1917;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, background-color 0.16s ease;
+}
+
+.zine-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 0px #1C1917;
+  background-color: #F3D37A;
+}
+
+.zine-pill:active {
+  transform: translateY(1px);
+  box-shadow: 0px 1px 0px #1C1917;
+}
+
+.zine-storyboard-frame {
+  border: 2px solid #1C1917;
+  border-radius: 6px;
+  background-color: #161824;
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease;
+}
+
+.zine-storyboard-frame:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #6E6295;
+}
+
+
